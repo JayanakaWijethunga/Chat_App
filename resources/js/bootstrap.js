@@ -56,3 +56,10 @@ if (token) {
      wsPort: 6001,
      disableStats: true,
  });
+
+ window.Echo.channel('DemoChannel')
+ .listen('WebSocketEvent',(e)=>{
+
+    console.log(e);
+
+ });
